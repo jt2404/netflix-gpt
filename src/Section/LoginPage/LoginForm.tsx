@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import { checkValidateData } from "../../utils/validate";
 
 const LoginForm: React.FC = () => {
@@ -10,6 +9,8 @@ const LoginForm: React.FC = () => {
   const password = useRef<HTMLInputElement | null>(null);
 
   const toggleSignInForm = () => {
+    setErrorMessage("")
+
     setIsSignInForm(!isSignInForm);
   };
 
