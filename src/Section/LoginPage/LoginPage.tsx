@@ -11,7 +11,7 @@ const LoginPage = () => {
       <div className=" flex justify-center items-center w-full h-screen">
       <LoginForm />
       </div>
-    </>
+      </>
   );
 };
 
